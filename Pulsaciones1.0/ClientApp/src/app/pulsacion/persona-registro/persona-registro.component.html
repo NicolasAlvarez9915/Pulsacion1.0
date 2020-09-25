@@ -1,0 +1,47 @@
+<blockquote class="blockquote text-center  " >
+    <h1 class="display-1" >Registro</h1>
+        <form id="Formulario "  >
+            <div class="alert alert-info" >
+                <label for="LblId">Identificacion:</label>
+                <input type="text"  name="identificacion"   [(ngModel)]="persona.identificacion" class="form-control" /><br>
+                <label for="LblName">Nombre:</label>
+                <input type="text"  name="nombre"   [(ngModel)]="persona.nombre" class="form-control" /><br>
+                
+
+                <hr>
+                <label for="SlcSexo">Sexo:</label><br>
+                <select name="SlcSexo"  class="form-control" id="inlineFormCustomSelectPref" [(ngModel)]="persona.sexo" ><br>
+                    <option selected>Seleccione</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select><br>
+
+                <br><label for="LblName">Edad:</label>
+                <input type="number"  name="nombre"   [(ngModel)]="persona.edad" class="form-control" /><br>
+                
+                
+                    
+            </div>
+            <hr>
+            <div class="alert alert-info" >
+                <label for="LblName" >Pulsacion: </label>
+                <label id="pulsacion" ></label> <br>
+            </div>
+
+            
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-info" id="btnCalcular" (click)="CalcularPulsacion()">
+                    Calcular Pulsaciones    
+                </button>
+                <button type="button" class="btn btn-info" id="btnRegistrar" (click)="Registrar()">
+                    Registrar Persona  
+                </button>
+                <button type="button" class="btn btn-secondary" id="btnCancelar" type="reset">
+                    Cancelar  
+                </button>
+              </div>
+            
+        </form>
+  </blockquote>
+
